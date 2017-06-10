@@ -118,7 +118,7 @@ int main()
                     printf("now time is %d.%d\r\n",nowtime.tv_sec,nowtime.tv_usec);
                          
                     //printf("recv  %d flag= %d\r\n",nbyte,data_pack.flag);
-                    CvMat cvmat = cvMat(480, 640, CV_8UC3, (void*)img);
+                    CvMat cvmat = cvMat(480, 640, CV_8UC3, (void*)img);//创建一个cv的格式
                     frame = cvDecodeImage(&cvmat, 1);//解码，这一步将数据转换为IplImage格式
                     cvShowImage("window", frame);//显示图像
                     cvWaitKey(400);
