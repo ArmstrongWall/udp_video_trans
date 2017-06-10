@@ -3,6 +3,7 @@
   功能：UDP服务器
   作者：JohnnyWang
   log： 2017.5.28 实现接收客户端数据
+        2017.6.10 实现连续接受图像
  * */
 #include <sys/types.h> /* See NOTES */
 #include <sys/socket.h>
